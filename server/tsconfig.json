@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // Specify module resolution strategy for Node.js CommonJS implemmentation
+    "moduleResolution": "node",
+    // Most recent version of js/ts we are coding in
+    "target": "es6",
+    // Output module format, only commonjs is interpreted by node, not Es2015 or above(Es6)
+    "module": "commonjs",
+    "lib": ["esnext"],
+    "strict": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // Where declaration (file.d.ts) files are placed
+    // "declarationDir": "./dist",
+    // Where to output the compiled js
+    "outDir": "./dist",
+    "typeRoots": ["node_modules/@types"]
+  },
+  // Which files will be included in type checking and in the compiled output
+  "include": ["src", ".env"],
+  "exclude": ["node_modues"]
+}

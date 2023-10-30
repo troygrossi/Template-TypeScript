@@ -1,0 +1,19 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "concurrently \"cd server && npm i\" \"cd client && npm i\"",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run start\"",
+    "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
+    "prod": "cd server && npm run prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  }
+}
